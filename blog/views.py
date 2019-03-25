@@ -4,9 +4,14 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.views.generic import DeleteView
+
+
+def index(request):
+    return render(request,'blog/index.html')
 
 def post_list(request):
-    posts = Post.objects.order_by('published_date')
+    posts = Post.objects.order_by('-published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
@@ -39,5 +44,21 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def post_delete(request, pk):
+    post = get_object_or_404(Post,pk=pk)
+    post.delete()
+    posts = Post.objects.order_by('-published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+
+
+
+
+
+
+
+
+
 
 
