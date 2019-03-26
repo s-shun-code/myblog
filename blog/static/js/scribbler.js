@@ -16,7 +16,7 @@ if (document.getElementsByClassName('demo').length > 0) {
     >>>print(Mydata)
     >>>Hello,my name is SHUN.I am from YAMAGATA Japan.I was born in 1996.🙃
 
-    >>>print(Thingiwanttodo)
+    >>>print(Thingsiwanttodo)
     >>> - orthodontic correction.😬
         - sleep on a semi-double bed.🛌
         - go on a trip overseas.🌏
