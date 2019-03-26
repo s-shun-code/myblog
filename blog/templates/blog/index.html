@@ -1,15 +1,17 @@
-{% load static %}
 <html>
-  <head>
+<head>
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>My Page</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="{%static 'css/scribbler-global.css' %}">
-      <link rel="stylesheet" href="{%static 'css/scribbler-landing.css' %}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.0/styles/railscasts.min.css">
+      <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+      <link rel="stylesheet" href="../../static/css/scribbler-global.css">
+      <link rel="stylesheet" href="../../static/css/scribbler-landing.css">
       <link rel="author" href="humans.txt">
   </head>
   <body>
@@ -62,8 +64,9 @@
       </div>
 
     <footer class="footer">If you want to see my soliloquy,click →<a href="{% url 'post_list' %}" target="_blank" class="link link--light">Talk to myself </a>.</footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="{% static 'js/scribbler.js' %"></script>
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js"></script>
+    <script src="../../static/js/scribbler.js"></script>
   </body>
 </html>
