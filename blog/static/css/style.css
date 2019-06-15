@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration:none;
+  font-family: 'Trebuchet MS',sans-serif;
+}
+
+.main{
+  height: 100%;
+  width: auto;
+}
+
+/* header*/
+.header{
+  height: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-bottom: solid #dcdcdc 2px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:24;
+}
+
+.header ul{
+  float: right;
+}
+
+.header li{
+  float:left;
+  display: inline-block;
+  height: 50px;
+  margin-right: 20px;
+  line-height: 50px;
+}
+
+.header li:hover {
+  background-color: #808080;
+  background-size: cover;
+}
+
+.header ul a:hover{
+  color: #696969;
+}
+
+.header a{
+  display: inline-block;
+  color: #c0c0c0;
+}
+
+.header a:visited{
+  color: #c0c0c0;
+}
+
+/*welcome*/
+.welcome{
+  display: block;
+  height: 500px;
+  margin: 100px 50px;
+  background-color: white;
+  padding-top: 120px;
+}
+
+/*sentence*/
+.bigmoji{
+  text-align: center;
+  line-height: 15px;
+  font-size: 50px;
+  color: black;
+  letter-spacing:5px;
+  display: block;
+}
+
+.smallmoji{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  display: block;
+  padding-top: 100px;
+}
+
+
+/*button*/
+.btn {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.btn ul{
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.btn ul li {
+  position: relative;
+  left: -50%;
+  float: left;
+  font-size: 50px;
+  padding-top: 50px;
+  padding-left:5px;
+  margin-left: 20px;
+}
+
+
+.fab{
+  border: solid black 2px;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 1.0;
+  border-radius: 30px;
+  background-color: #c0c0c0;
+  border-color: #f5f5f5;
+}
+
+.fab:hover {
+  background-color: #808080;
+}
+
